@@ -1,27 +1,15 @@
 export interface CountryData {
   officialName: string
   commonName: string
-  motto: string
+  quechua: string
+  aimara: string
+  lema: string
+  firme: string
+  himno: string
   anthem: string
-  capital: string
+  problem: string
   largestCity: string
   officialLanguages: string[]
-  demonym: string
-  government: string
-  president: string
-  independence: {
-    from: string
-    date: string
-  }
-  area: string
-  population: string
-  density: string
-  gdpPpp: string
-  gdpPerCapita: string
-  currency: string
-  timezone: string
-  isoCode: string
-  internetDomain: string
 }
 
 export interface TocItem {

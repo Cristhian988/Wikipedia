@@ -2,7 +2,6 @@ import React from 'react'
 import ArticleHeader from './article-header'
 import ArticleContent from './article-content'
 import CountryInfobox from './country-infobox'
-import TableOfContents from './table-of-contents'
 import { CountryData } from '@/types/wikipedia'
 
 interface ArticleLayoutProps {
@@ -16,12 +15,11 @@ export default function ArticleLayout({countryData}: ArticleLayoutProps) {
         
         <div className="flex gap-6">
             <div className="flex-1">
-                <ArticleContent />
+                <ArticleContent countryData={countryData} />
             </div>
             
             <aside className="w-80">
-                <CountryInfobox />
-                <TableOfContents />
+                <CountryInfobox countryData={countryData} />
             </aside>
         </div>
     </main>
